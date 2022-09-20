@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+}
+
+.container {
+	background-color: #f8f8f8;
+	text-align: center;
+	padding: 50px 0;
+}
+
+header h1 {
+	color: #143774;
+	font-family: 'Lora', serif;
+	font-size: 2rem;
+	margin-bottom: 0;
+}
+
+header h2 {
+	color: #1792D2;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+	font-size: 0.75rem;
+	margin-top: 0;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+	font-size: 1rem;
+	padding-left: 0;
+}
+
+nav li {
+	margin: 0 1em;
+}
+
+
+nav a {
+	text-decoration: none;
+	color: #707070;
+	
+}
+
+nav a:active, nav a:hover,
+nav a:focus {
+	border-bottom: 2px solid #707070;
+}
