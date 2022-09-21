@@ -1,12 +1,38 @@
+/*  Fonts
+-----
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
 body {
 	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
 }
 
+/* =================
+Layout
+================= */
+
 .container {
-	background-color: #f8f8f8;
-	text-align: center;
-	padding: 50px 0;
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
 }
+
+.container-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header {
+	background-color: #f8f8f8;
+	padding: 2rem 0;
+}
+/* =================
+Typography
+================= */
+
 
 header h1 {
 	color: #143774;
@@ -15,36 +41,132 @@ header h1 {
 	margin-bottom: 0;
 }
 
-header h2 {
+.subtitle {
 	color: #1792D2;
-	font-family: 'Ubuntu', sans-serif;
 	font-weight: 700;
 	font-size: 0.75rem;
 	margin-top: 0;
 }
 
+/* navigation */
+
 nav ul {
 	display: flex;
 	list-style-type: none;
 	justify-content: center;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 700;
-	font-size: 1rem;
-	padding-left: 0;
+	padding: 0;
 }
 
 nav li {
-	margin: 0 1em;
+	margin-left: 2em;
 }
 
 
 nav a {
+	font-weight: 700;
 	text-decoration: none;
 	color: #707070;
-	
+	padding: .25em 0;
 }
 
 nav a:active, nav a:hover,
 nav a:focus {
 	border-bottom: 2px solid #707070;
+}
+
+[role="main"] {
+	width: 517px;
+	color:#707070
+}
+
+.article-title {
+	color: #143774;
+	font-family: 'Lora', serif;
+	font-size: 24px;
+}
+
+.article-read-more {
+	color: #1792D2;
+	text-decoration: none;
+}
+
+.article-body span {
+	font-weight: 700;
+}
+
+.article-image {
+	width: 517px;
+	height: 308px;
+}
+
+.widget-image {
+	width: 100%;
+}
+
+.article-featured {
+	border-bottom: 1.5px solid #707070;
+	padding-bottom: 20px;
+}
+
+.widget-image-main {
+	width: 428px;
+	height: 133px;
+}
+
+.widget-image {
+	width: 420px;
+	height: 87px;
+	display: block;
+	margin: 0 auto;
+}
+
+.sidebar-widget{
+	display: flex;
+	flex-direction: column;
+	border: 15px solid #EBEBEB;
+	margin-bottom: 30px;
+}
+
+.sidebar-widget h2,
+ .sidebar-widget img,
+  .sidebar-widget p {
+	margin-left: 20px;
+  }
+
+.widget-body {
+	font-size: 14px;
+}
+
+.widget-title,
+ .widget-body,
+ .widget-recent-post-title {
+	
+	color: #143774;
+ }
+
+.sidebar {
+	width: 100%;
+}
+
+.widget-recent-post:not(last-child) {
+	border-bottom: 1px solid #EBEBEB;
+}
+
+.widget-recent-post:last-child {
+	margin-bottom: 20px;
+}
+
+@media (max-width: 675px) {
+	.container-nav {
+		flex-direction: column;
+	}
+	header {
+		text-align: center;
+	}
+	nav ul {
+		flex-direction: column;
+	}
+	nav li{
+		margin: .5em 0;
+	}
 }
